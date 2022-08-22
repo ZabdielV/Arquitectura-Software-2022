@@ -9,8 +9,11 @@ require 'minitest/autorun'
 require 'table_generator'
 require 'student'
 
+# This class is for testing the different implementations of TableGenerator.
+# It inheritos from Minitest::Test
 class TableGeneratorTest < Minitest::Test
 
+  # Initializes the data, including header, data and students.
   def setup
     @headerEmpty = []
     @dataEmpty = []
@@ -45,6 +48,8 @@ class TableGeneratorTest < Minitest::Test
                                  [53, 72, 88])]
   end
 
+  # This class calls CSVTableGenerator to generate a csv table.
+  # It asserts if the output is the expected one. 
   def test_CSVTableGenerator
     assert_equal \
       "Snap,Crackle,Pop\n" +
@@ -66,6 +71,8 @@ class TableGeneratorTest < Minitest::Test
                             @dataStudents).generate
   end
 
+  # This class calls HTMLTableGenerator to generate a html table.
+  # It asserts if the output is the expected one.
   def test_HTMLTableGenerator
     assert_equal \
       "<table>\n" +
@@ -99,6 +106,8 @@ class TableGeneratorTest < Minitest::Test
                              @dataStudents).generate
   end
 
+  # This class calls AsciiDocTableGenerator to generate a Ascii table.
+  # It asserts if the output is the expected one.
   def test_AsciiDocTableGenerator
     assert_equal \
       "[options=\"header\"]\n" +
