@@ -19,6 +19,9 @@ at the command line:
 
     ruby -I . -w table_generator_test.rb
 
+The UML class diagram is as follows.
+rdoc-image:img/uml_diagram.png
+
 == References
 
 - \M. Fowler. <em>UML Distilled: A Brief Guide to the Standard Object Modeling Language, 3rd Edition.</em>  Addison-Wesley, 2003.
