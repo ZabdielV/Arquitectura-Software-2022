@@ -12,6 +12,8 @@ Tecnológico de Monterrey, Campus Estado de México.
 
 == Overview
 
+The <b>template method pattern</b> is normally used when your code always wants to do exactly the same thing.
+Sometimes wants to do this, and sometimes it wants to do that.
 
 
 To test the program, inside the +src+ folder type the following instruction
