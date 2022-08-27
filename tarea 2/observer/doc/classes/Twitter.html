@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang='en'>
+<head>
+<title>Twitter</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<link href='../css/style.css' media='screen' rel='stylesheet' type='text/css'>
+<script type='text/javascript'>
+  function popupCode(url) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+  
+  function toggleCode(id) {
+    var code = document.getElementById(id)
+  
+    code.style.display = code.style.display != 'block' ? 'block' : 'none'
+    return true
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln('<' + 'style type="text/css">.method .source pre { display: none }<\/style>')
+</script>
+</head>
+<body class='page'>
+<div class='class' id='wrapper'>
+<div class='header'>
+<h1 class='name'><span class='type'>class</span>
+Twitter
+</h1>
+<ol class='paths'>
+<li>
+<a href="../files/src/twitter_rb.html">src/twitter.rb</a>
+</li>
+</ol>
+<div class='parent'>
+Superclass:
+<strong>Object</strong>
+</div>
+</div>
+<div id='content'>
+<div id='text'>
+<div id='description'>
+<pre>Observer Pattern
+Date: 29-Aug-2022
+Authors:
+         A01377950 Zabdiel Valentín Garduño Vivanco
+         A01377942 Luis Jonathan Rosas Ramos
+         A01377072 Emiliano Heredia García</pre>
+
+<p>require ‘observer’</p>
+</div>
+<div id='method-list'>
+<h2>Methods</h2>
+<h3>Public Class</h3>
+<ol>
+<li><a href="#method-c-new">new</a></li>
+</ol>
+<h3>Public Instance</h3>
+<ol>
+<li><a href="#method-i-add_observer">add_observer</a></li>
+<li><a href="#method-i-follow">follow</a></li>
+<li><a href="#method-i-imprimir_tweets">imprimir_tweets</a></li>
+<li><a href="#attribute-i-name">name</a></li>
+<li><a href="#method-i-notify_observers">notify_observers</a></li>
+<li><a href="#attribute-i-observers">observers</a></li>
+<li><a href="#attribute-i-texto">texto</a></li>
+<li><a href="#method-i-tweet">tweet</a></li>
+</ol>
+</div>
+<div id='context'>
+</div>
+<div id='section'>
+<div id='attribute-list'>
+<h2 class='section-bar'>Attributes</h2>
+<div class='name-list'>
+<table>
+<tr class='top-aligned-row context-row'>
+<td class='context-item-name'>
+<a name='attribute-i-name'>name</a>
+</td>
+<td class='context-item-value'>[R]</td>
+<td class='context-item-desc'>
+<p>This attr_reader property allows internal attributes to be in read-only mode.</p>
+</td>
+</tr>
+<tr class='top-aligned-row context-row'>
+<td class='context-item-name'>
+<a name='attribute-i-observers'>observers</a>
+</td>
+<td class='context-item-value'>[R]</td>
+<td class='context-item-desc'>
+<p>This attr_reader property allows internal attributes to be in read-only mode.</p>
+</td>
+</tr>
+<tr class='top-aligned-row context-row'>
+<td class='context-item-name'>
+<a name='attribute-i-texto'>texto</a>
+</td>
+<td class='context-item-value'>[R]</td>
+<td class='context-item-desc'>
+<p>This attr_reader property allows internal attributes to be in read-only mode.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id='methods'>
+<h2>Public Class methods</h2>
+<div class='method public-class' id='method-method-c-new'>
+<a name='method-c-new'></a>
+<div class='synopsis'>
+<span class='name'>new</span><span class='arguments'>(name)</span>
+
+</div>
+<div class='description'>
+
+<p>Initialize the constructor, it receives the name of this account. It initializes the array with the observers.</p>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-c-new-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-c-new-source'><span class="ruby-comment"># File src/twitter.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">name</span>
+  <span class="ruby-ivar">@observers</span> = []
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<h2>Public Instance methods</h2>
+<div class='method public-instance' id='method-method-i-add_observer'>
+<a name='method-i-add_observer'></a>
+<div class='synopsis'>
+<span class='name'>add_observer</span><span class='arguments'>(observer)</span>
+
+</div>
+<div class='description'>
+
+<p>This method allows adding some observers. Specifically, it adds to this account a new follower.</p>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-add_observer-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-add_observer-source'><span class="ruby-comment"># File src/twitter.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_observer</span>(<span class="ruby-identifier">observer</span>)
+     <span class="ruby-ivar">@observers</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">observer</span>
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-follow'>
+<a name='method-i-follow'></a>
+<div class='synopsis'>
+<span class='name'>follow</span><span class='arguments'>(twitter_account)</span>
+
+</div>
+<div class='description'>
+
+<p>Follow a twitter account, it receives the account you want to follow, access its method <a href="Twitter.html#method-i-add_observer"><code>add_observer</code></a>, and then adds this account (self).</p>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-follow-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-follow-source'><span class="ruby-comment"># File src/twitter.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">follow</span>(<span class="ruby-identifier">twitter_account</span>)
+    <span class="ruby-identifier">twitter_account</span>.<span class="ruby-identifier">add_observer</span>(<span class="ruby-keyword">self</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">self</span>
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-imprimir_tweets'>
+<a name='method-i-imprimir_tweets'></a>
+<div class='synopsis'>
+<span class='name'>imprimir_tweets</span><span class='arguments'>(twitter_account)</span>
+
+</div>
+<div class='description'>
+
+<p>Wherever an account you follow posts a new tweet automatically this method is called, it receives the account that posted the tweet.</p>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-imprimir_tweets-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-imprimir_tweets-source'><span class="ruby-comment"># File src/twitter.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">imprimir_tweets</span>(<span class="ruby-identifier">twitter_account</span>)
+    <span class="ruby-identifier">puts</span>(<span class="ruby-node">&quot;#{self.name} received a tweet from #{twitter_account.name}: #{twitter_account.texto}&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-notify_observers'>
+<a name='method-i-notify_observers'></a>
+<div class='synopsis'>
+<span class='name'>notify_observers</span><span class='arguments'>()</span>
+
+</div>
+<div class='description'>
+
+<p>Any time you publish a new tweet, all your followers will notice it. It iterates through the array of observers (followers) and calls the method imprimir_tweets.</p>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-notify_observers-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-notify_observers-source'><span class="ruby-comment"># File src/twitter.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">notify_observers</span>
+    <span class="ruby-ivar">@observers</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">observer</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">observer</span>.<span class="ruby-identifier">imprimir_tweets</span>(<span class="ruby-keyword">self</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-tweet'>
+<a name='method-i-tweet'></a>
+<div class='synopsis'>
+<span class='name'>tweet</span><span class='arguments'>(texto)</span>
+
+</div>
+<div class='description'>
+
+<p>Post a new tweet, all the followers from this account will notice it.</p>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-tweet-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-tweet-source'><span class="ruby-comment"># File src/twitter.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">tweet</span>(<span class="ruby-identifier">texto</span>)
+    <span class="ruby-ivar">@texto</span>=<span class="ruby-identifier">texto</span>
+    <span class="ruby-identifier">notify_observers</span>
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id='footer-push'></div>
+</div>
+<div id='footer'>
+<a href="https://github.com/jeremyevans/hanna-nouveau"><strong>Hanna Nouveau</strong> RDoc template</a>
+</div>
+</body>
+</html>
