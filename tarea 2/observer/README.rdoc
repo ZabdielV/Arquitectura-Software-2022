@@ -24,7 +24,7 @@ at the command line:
     ruby -I . -w twitter_test.rb
 
 The UML class diagram is as follows.
-rdoc-image:img/uml_diagram.png
+rdoc-image:img/class_diagram.png
 
 == References
 
