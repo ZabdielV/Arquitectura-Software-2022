@@ -11,10 +11,10 @@ Tecnológico de Monterrey, Campus Estado de México.
 * *A01377072* <em>Emiliano Heredia García</em>
 
 == Overview
-This Command Pattern encapsulates all needed infromation to perfom an action or command.
-There are four important terms: command, client, reciever, and invoker. This helps make
-loosely coupled program wit ease, avoiding hard-wiring requests at compile-time. We utilized 
-this pattern to simulate the control of a fan ceiling and a room light.
+This Command Pattern encapsulates all needed information to perform an action or command.
+There are four important terms: command, the client, receiver, and invoker. This helps make
+Loosely coupled program with ease, avoiding hard-wiring requests at compile-time. We utilized 
+This pattern to simulate the control of a fan ceiling and a room light.
 
 
 To test the program, inside the +src+ folder type the following instruction
