@@ -1,4 +1,4 @@
-= Observer Pattern
+= Command Pattern
 
 This documentation was developed as part of a programming activity for
 the <em>Software Design and Architecture</em> course (_Tc3049_), at the
@@ -11,20 +11,17 @@ Tecnológico de Monterrey, Campus Estado de México.
 * *A01377072* <em>Emiliano Heredia García</em>
 
 == Overview
-This Observer Pattern allow other components to be notified when a component makes a change.
-Every component know about activities of other components without having to tightly couple everything together.
-Normally an interface between the observer and observable is used when the observer is too complex, however in this
-case we simply create some methods inside out Twitter class.
+This Command Pattern ...
 
 
 
 To test the program, inside the +src+ folder type the following instruction
 at the command line:
 
-    ruby -I . -w twitter_test.rb
+    ruby -I . -w control_test.rb
 
 The UML class diagram is as follows.
-rdoc-image:img/class_diagram.png
+
 
 == References
 
@@ -34,4 +31,4 @@ rdoc-image:img/class_diagram.png
 
 - \R. Olsen. <em>Design Patterns in Ruby.</em> Addison-Wesley, 2007.
 
-- Ruby-Doc.org. <em>RDoc Markup Reference.</em> {\http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html}[http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html] Accessed August 27, 2022.
+- Ruby-Doc.org. <em>RDoc Markup Reference.</em> {\http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html}[http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html] Accessed September 11, 2022.

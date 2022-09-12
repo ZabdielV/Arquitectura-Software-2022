@@ -7,7 +7,8 @@
 
 #Class that initializes arrays to make reference to "on" and "off" buttons and removes the last pushed button.
 class RemoteControlWithUndo
-    #It initializes two arrays to save reference of "on" and "off" classes.
+  
+    #this method initializes two arrays to save reference of "on" and "off" classes.
     #no_command is and empty class that is saved seven times in the arrays and @undo_command attribute.
     def initialize
       @on_commands = []
@@ -74,22 +75,26 @@ end
   class Light
     
     attr_reader :level
-  
+
+    #it initializes a location and level of light.
     def initialize(location)
       @location = location
       @level = 0
     end
   
+    #Change level of light to 100
     def on
       @level = 100
       puts "Light is on"
     end
   
+    #Change level of light to 0
     def off
       @level = 0
       puts "Light is off"
     end
   
+    #Custom method that change level of light with an argument
     def dim(level)
       @level = level
       if level == 0
@@ -113,26 +118,31 @@ end
   
     attr_reader :speed
   
+    #It initializes a fan with new location and speed off.
     def initialize(location)
       @location = location
       @speed = OFF
     end
   
+    #It changes speed to high.
     def high
       @speed = HIGH
       puts "#{@location} ceiling fan is on high"
     end
   
+    #It changes speed to medium.
     def medium
       @speed = MEDIUM
       puts "#{@location} ceiling fan is on medium"
     end
   
+    #It changes speed to low.
     def low
       @speed = LOW
       puts "#{@location} ceiling fan is on low"
     end
   
+     #It changes speed to off.
     def off
       @speed = OFF
       puts "#{@location} ceiling fan is off"
