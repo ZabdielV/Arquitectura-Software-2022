@@ -12,7 +12,12 @@ Tecnológico de Monterrey, Campus Estado de México.
 
 == Overview
 
-
+The Adapter pattern, also known as Wrapper, its a way to allow interfaces to be used as another interface. 
+There are various uses to this, such as allowing old code to be implemented in new or viceversa, making new code backwards compatible.
+This is to avoid massive refactoring or meddling in code unnecesarly, facilitating reusability and flexibility.
+Here we use a queue_adapter to wrap arround a simple queue.
+Not only making it usable for the adapter_test that expects a different interface than the one provided by simple_queue, 
+but also extends the functions of simple_queue.
 
 To test the program, inside the +src+ folder type the following instruction
 at the command line:
