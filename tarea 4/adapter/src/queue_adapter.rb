@@ -8,7 +8,7 @@
 
 #This class allows simple_queue to act as Last-In First-Out (LIFO) stack
 class QueueAdapter
-  attr_reader :queue
+
 
   #Initializes a queue as attribute to act as stack.
     def initialize(q)

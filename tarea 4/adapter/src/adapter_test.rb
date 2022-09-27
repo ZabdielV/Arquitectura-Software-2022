@@ -12,8 +12,10 @@ require 'minitest/autorun'
 require 'simple_queue'
 require 'queue_adapter'
 
+#This class evaluates many test in order to prove SimpleQueue class and QueueAdapter class.
 class QueueAdapterTest < Minitest::Test
 
+  #Run many tests
   def test_queue_adapter
     q = SimpleQueue.new
     qa = QueueAdapter.new(q)
