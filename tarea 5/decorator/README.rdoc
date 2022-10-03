@@ -12,7 +12,11 @@ Tecnológico de Monterrey, Campus Estado de México.
 
 == Overview
 
-
+The Decorator Pattern allows to dynamically add behavior to an object depending on the needs of the
+developer/user. Unlike other methods to reeplicate this, such as inheritance or interfaces, the Decorator
+allows to add behavior to a specific object, independently from other objects. This enables developers to
+add behavior according to the specific needs and only add/use whatever it needs. Rather than including a lot
+of functionality that wont be used, or needs to be modified to make it fulfill the needs.
 
 To test the program, inside the +src+ folder type the following instruction
 at the command line:
