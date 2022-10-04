@@ -24,6 +24,7 @@ at the command line:
     ruby -I . -w coffee_test.rb
 
 The UML class diagram is as follows.
+rdoc-image:img/diagrama.jpeg
 
 
 == References
