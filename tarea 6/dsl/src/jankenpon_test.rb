@@ -9,7 +9,7 @@ require 'minitest/autorun'
 require 'stringio'
 require 'jankenpon'
 
-
+#It evaluates many cases to test jankenpon.rb classes and methods.
 class JakenponTest < Minitest::Test
 
     def setup
@@ -179,4 +179,4 @@ class JakenponTest < Minitest::Test
         @out.string
     end
   
-  end
+end
