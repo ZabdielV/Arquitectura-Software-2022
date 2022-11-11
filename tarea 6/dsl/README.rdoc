@@ -25,6 +25,7 @@ at the command line:
 
 The UML class diagram is as follows.
 
+rdoc-image:img/uml_diagram.jpg
 
 
 == References
