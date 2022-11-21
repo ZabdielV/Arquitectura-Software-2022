@@ -23,6 +23,112 @@
         "answer-1":"Application 'hard wires' the class of object to create in each 'new' expression.",
         "answer-2":"You want to add behavior or state to individual objects at run-time. Inheritance is not feasible because it is static and applies to an entire class.",
         "correct-answer":"answer-1"
+    },
+    {
+        "id":4,
+        "title":"Prototype Design Pattern",
+        "question":"Does Prototype Design implement the clone() operation?",
+        "answer-1":"Yes",
+        "answer-2":"No",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":5,
+        "title":"Factory Design Pattern",
+        "question":"Does Factory Design pattern define a virtual constructor?",
+        "answer-1":"Yes",
+        "answer-2":"No",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":6,
+        "title":"Factory Design Pattern",
+        "question":"What is the objective of Factory Design Pattern?",
+        "answer-1":"Application 'hard wires' the class of object to create in each 'new' expression.",
+        "answer-2":"Ensure a class has only one instance, and provide a global point of access to it.",
+        "answer-3":"Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":7,
+        "title":"Factory Design Pattern",
+        "question":"_____ is similar to Abstract Factory but without the emphasis on families.",
+        "answer-1":"Prototype pattern",
+        "answer-2":"Factory pattern",
+        "answer-3":"Singleton pattern",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":8,
+        "title":"Abstract Design Pattern",
+        "question":"Provides an interface for creating families of related or dependent objects without specifying their concrete classes.",
+        "answer-1":"Abstract pattern",
+        "answer-2":"Factory pattern",
+        "answer-3":"Singleton pattern",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":9,
+        "title":"Abstract Design Pattern",
+        "question":"A hierarchy that encapsulates: many possible 'platforms', and the construction of a suite of 'products'.",
+        "answer-1":"Singleton pattern",
+        "answer-2":"Factory pattern",
+        "answer-3":"Abstract pattern",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":10,
+        "title":"Adapter Design Pattern",
+        "question":"Convert the interface of a class into another interface clients expect. ____ lets classes work together that couldn't otherwise because of incompatible interfaces.",
+        "answer-1":"Singleton pattern",
+        "answer-2":"Adapter pattern",
+        "answer-3":"Abstract pattern",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":11,
+        "title":"Bridge Design Pattern",
+        "question":"Decouple an abstraction from its implementation so that the two can vary independently. ",
+        "answer-1":"Bridge pattern",
+        "answer-2":"Adapter pattern",
+        "answer-3":"Abstract pattern",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":12,
+        "title":"Bridge Design Pattern",
+        "question":"Does Bridge Pattern implement recursive composition? ",
+        "answer-1":"Yes",
+        "answer-2":"No",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":13,
+        "title":"Composite Design Pattern",
+        "question":"Does Composite Pattern implement recursive composition?",
+        "answer-1":"Yes",
+        "answer-2":"No",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":14,
+        "title":"Composite Design Pattern",
+        "question":"Compose objects into tree structures to represent whole-part hierarchies. ____ lets clients treat individual objects and compositions of objects uniformly.",
+        "answer-1":"Bridge pattern",
+        "answer-2":"Adapter pattern",
+        "answer-3":"Composite pattern ",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":15,
+        "title":"Decorator Design Pattern",
+        "question":"You want to add behavior or state to individual objects at run-time. Inheritance is not feasible because it is static and applies to an entire class.",
+        "answer-1":"Adapter pattern",
+        "answer-2":"Decorator pattern",
+        "answer-3":"Bridge pattern",
+        "correct-answer":"answer-2"
     }
+
+
 
 ]
