@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>Quiz about design patterns, antipatterns and refactorings. Please awnser all the questions</h2>
+
+    <form method="post">
+
+        <h2>Question ...</h2>
+        <h3><%= @info["question"] %></h3>
+
+        <fieldset>
+            <legend>Select the correct answer:</legend>
+
+            <div>
+                <input type="radio" id="answer-1" name="answer" value="answer-1"
+                        checked>
+                <label for="answer-1"> <%= @info["answer-1"] %>  </label>
+            </div>
+
+            <div>
+                <input type="radio" id="answer-2" name="answer" value="answer-2">
+                <label for="answer-2"> <%= @info["answer-2"] %> </label>
+            </div>
+
+            <% if @info["answer-3"] != nil %>
+                <div>
+                    <input type="radio" id="answer-3" name="answer" value="answer-3">
+                    <label for="answer-3"> <%= @info["answer-3"] %> </label>
+                </div>
+            <% end %>
+
+        
+        </fieldset>
+
+        <p>
+          <input type="submit" value="Continue" />
+        </p>
+      </form>
+</body>
+
+</html>
+
+

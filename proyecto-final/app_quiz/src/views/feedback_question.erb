@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+
+    <% if $was_correct %>
+        <h2 style="color: blue;">your anwser was correct</h2>
+    <% else %>
+        <h2 style="color: red;">your anwser was incorrect</h2>
+    <% end %>
+
+    <form method="post">
+
+
+    <% if !$was_correct %>
+        <h3> <%= $current_question["question"]  %></h3>
+        <p>Correct answer =  <%= $current_question[$current_question["correct-answer"]]  %></p>
+    <% end %>
+
+        <p>
+          <input type="submit" value="Continue" />
+        </p>
+    </form>
+
+</body>
+</html>
+
+
