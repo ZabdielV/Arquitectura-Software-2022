@@ -102,7 +102,7 @@ post '/feedback' do
   redirect '/quiz'
 
 end
-
+ 
 
 #If user answered all questions then returns the final score.
 get '/final_feedback' do
