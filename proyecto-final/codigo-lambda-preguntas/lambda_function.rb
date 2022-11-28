@@ -21,6 +21,10 @@ def lambda_handler(event:, context:)
     #Regresa todas las preguntas en orden al azar
     when "/"
         handle_get_preguntas
+    when "/upload"
+        handle_upload_users(event)
+    when "/get"
+        handle_get_users(event)
     when "/preguntas"
         handle_get_n_preguntas(event)
     else
@@ -28,7 +32,56 @@ def lambda_handler(event:, context:)
     end
 end
 
+#Saves user responses
+def handle_upload_users(event)
+    rawJson = event.dig("body")
 
+    ## {
+    ##  "user": "id",
+    ##  "correctAnswers": 5,
+    ##  "totalAnswers": 10
+    ## }
+    ##
+    json = JSON.parse(rawJson)
+    region = 'us-west-2'
+    client = Aws::DynamoDB::Client.new(region: region)
+    
+    
+    client.put_item({
+      table_name: 'users',
+      item: JSON.generate(json)
+    })
+
+  {
+    statusCode: 200
+  }
+end
+
+#Retrives user responses
+def handle_get_users(event)
+  rawJson = event.dig("body")
+
+  ## {
+  ##  "user": "id"
+  ## }
+  json = JSON.parse(rawJson)
+
+  region = 'us-west-2'
+  client = Aws::DynamoDB::Client.new(region: region)
+  
+  result = client.get_item({
+    table_name: 'users',
+    item: JSON.generate(json)
+  })
+  
+
+{
+  statusCode: 200,
+  body: JSON.generate(result)
+}
+end
+
+handle_get_users
 
 #Return all questions in random order.
 def handle_get_preguntas

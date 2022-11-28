@@ -261,5 +261,165 @@
         "answer-2":"Provides an interface for creating objects in a superclass",
         "answer-3":"Let you fit more objects into the available amount of RAM by sharing common parts of state",
         "correct-answer":"answer-1"
+    },{
+        "id":31,
+        "title":"Singletton Design Pattern",
+        "question":"Which of the following factors are influenced on the architect?",
+        "answer-1":"Background and experience of the architects",
+        "answer-2":"Customers and end users",
+        "answer-3":"All of the above",
+        "correct-answer":"answer-3"
+    },{
+        "id":32,
+        "title":"Software arquitecture",
+        "question":"Seeheim model later evolve to _____________ model.",
+        "answer-1":"Slinky Model",
+        "answer-2":"Arch Model",
+        "answer-3":"All of the above",
+        "correct-answer":"answer-3"
+    },{
+        "id":33,
+        "title":"Software arquitecture",
+        "question":"Software design defines __________________.",
+        "answer-1":"Software Design satisfies client needs and desires",
+        "answer-2":"Software Design specifies the nature and composition of software product",
+        "answer-3":"All of the above",
+        "correct-answer":"answer-3"
+    },{
+        "id":34,
+        "title":"Software arquitecture",
+        "question":"How do architects influence on developing organization?",
+        "answer-1":"All of the above",
+        "answer-2":"Immediate business",
+        "answer-3":"Organization structure",
+        "correct-answer":"answer-3"
+    },{
+        "id":35,
+        "title":"Software arquitecture",
+        "question":"Structural design is solved by ___________.",
+        "answer-1":"The specification model following the data flow diagram",
+        "answer-2":"Procedures represented as bubbles",
+        "answer-3":"Specification model is a structure chart showing procedure calling hierarchy and flow of data in and out of procedures",
+        "correct-answer":"answer-3"
+    },{
+        "id":36,
+        "title":"Software arquitecture",
+        "question":"Which one is true with regards to the architecture business cycle?",
+        "answer-1":"None of the these",
+        "answer-2":"The architecture can affect the enterprise goals of the developing organizations",
+        "answer-3":"All of the Above",
+        "correct-answer":"answer-3"
+    },{
+        "id":37,
+        "title":"Software arquitecture",
+        "question":"The Slinky portion of model referred to __________________.",
+        "answer-1":"",
+        "answer-2":"The ability to expand the allocation of functions to the components",
+        "answer-3":" The ability to contract the allocation of functions to the components",
+        "correct-answer":"answer-3"
+    },{
+        "id":38,
+        "title":"Software arquitecture",
+        "question":"MVC evolves to ______________ model.",
+        "answer-1":"Arch Model",
+        "answer-2":"Slinky Model",
+        "answer-3":"PAC Model",
+        "correct-answer":"answer-3"
+    },{
+        "id":39,
+        "title":"Software arquitecture",
+        "question":"What is false statement about structural design ?",
+        "answer-1":"It follows Structure chart",
+        "answer-2":"Structural design emphasis on procedural decomposition",
+        "answer-3":"The advantage is data flow representation",
+        "correct-answer":"answer-3"
+    },{
+        "id":40,
+        "title":"Software arquitecture",
+        "question":"HCI architectures used in _______________.",
+        "answer-1":"CSCW systems",
+        "answer-2":"Mobile computing",
+        "answer-3":"All of the above",
+        "correct-answer":"answer-3"
+    },{
+        "id":41,
+        "title":"Software arquitecture",
+        "question":"latest versions of structural design is ______________.",
+        "answer-1":"Regular Notations",
+        "answer-2":"More detailed and flexible processes",
+        "answer-3":"Wide support by CASE, More detailed and flexible processes",
+        "correct-answer":"answer-3"
+    },{
+        "id":42,
+        "title":"Software arquitecture",
+        "question":"The wrong procedure for structural design is _______________",
+        "answer-1":"Designing Object oriented systems",
+        "answer-2":" Transition of problem models to solution models",
+        "answer-3":"More procedural approach",
+        "correct-answer":"answer-3"
+    },{
+        "id":43,
+        "title":"Software arquitecture",
+        "question":"Is the design principles considered unique? Why?",
+        "answer-1":"All of the Above",
+        "answer-2":"None of the these",
+        "answer-3":"They are characteristic of well constructed programs",
+        "correct-answer":"answer-3"
+    },{
+        "id":44,
+        "title":"Software arquitecture",
+        "question":"Design task followed _________________.",
+        "answer-1":"Checking model’s completeness",
+        "answer-2":"Following design task heuristics",
+        "answer-3":"All of the above",
+        "correct-answer":"answer-3"
+    },{
+        "id":45,
+        "title":"Software arquitecture",
+        "question":"The primary goal for software engineering design is _________________.",
+        "answer-1":"To specify the behavior of program satisfying software product specification",
+        "answer-2":"To specify the structure of the program satisfying software product specification",
+        "answer-3":"All of the above",
+        "correct-answer":"answer-3"
+    },{
+        "id":46,
+        "title":"Software arquitecture",
+        "question":"Which analysis is not acceptable?",
+        "answer-1":"Object oriented uses more specific notations",
+        "answer-2":"Object oriented design are given more preference than structural design",
+        "answer-3":"Object oriented design always dominates the structural design",
+        "correct-answer":"answer-3"
+    },{
+        "id":47,
+        "title":"Software arquitecture",
+        "question":". A good program ____________________.",
+        "answer-1":"must conform to its design constraints",
+        "answer-2":" at delivery must satisfy its requirements",
+        "answer-3":"All of the Above",
+        "correct-answer":"answer-3"
+    },{
+        "id":48,
+        "title":"Software arquitecture",
+        "question":"For generic problem solving strategy __________________ is not in sequence.",
+        "answer-1":"Understand the problem",
+        "answer-2":"Generate candidate solutions",
+        "answer-3":"Iterate if no solution is adequate",
+        "correct-answer":"answer-3"
+    },{
+        "id":49,
+        "title":"Software arquitecture",
+        "question":"Which definition is wrong?",
+        "answer-1":"Planing is formulating a scheme for doing a project",
+        "answer-2":"Staffing is filing the positions in an organizational structure",
+        "answer-3":"Organizing is directing people doing project work",
+        "correct-answer":"answer-3"
+    },{
+        "id":50,
+        "title":"Software arquitecture",
+        "question":"_________________is not a project development activity.",
+        "answer-1":"Tracking",
+        "answer-2":"Organizing",
+        "answer-3":"Operating",
+        "correct-answer":"answer-3"
     }
 ]
