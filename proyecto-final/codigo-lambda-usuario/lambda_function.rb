@@ -12,6 +12,36 @@ require 'json'
 require 'date'
 
 
+def create_table():
+  dynamodb_client = Aws::DynamoDB::Client.new(region: region)
+  table_definition = {
+    table_name: "users",
+    key_schema: [
+      {
+        attribute_name: 'user',
+        key_type: 'HASH'  # Partition key.
+      },
+      {
+        attribute_name: 'score',
+        key_type: 'RANGE' # Sort key.
+      }
+    ],
+    attribute_definitions: [
+      {
+        attribute_name: 'correctAnswers',
+        attribute_type: 'N'
+      },
+      {
+        attribute_name: 'totalAnswers',
+        attribute_type: 'N'
+      }
+    ],
+    provisioned_throughput: {
+      read_capacity_units: 10,
+      write_capacity_units: 10
+    }
+  }
+
 #General handler that receives each HTTP request and returns a result.
 def lambda_handler(event:, context:)
 
@@ -37,6 +67,7 @@ def handle_upload_users(event)
     ## }
     ##
     json = JSON.parse(rawJson)
+    json['score'] = json['correctAnswers']/json['totalAnswers']
     region = 'us-west-2'
     client = Aws::DynamoDB::Client.new(region: region)
     
