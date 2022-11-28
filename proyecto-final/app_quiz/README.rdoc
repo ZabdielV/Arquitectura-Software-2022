@@ -1,5 +1,12 @@
 = Application Design and Architecture
 
+= General overview
+
+This project implements a quiz application using two microservices and using various AWS services. The front-end app was made with Ruby and Sinatra and the microservices were uploaded to lambda functions to create requests.
+
+
+= General overview
+
 == Authors
 
 * *A01377950* <em>Zabdiel Valentín Garduño Vivanco</em>
@@ -47,13 +54,10 @@ You must use Philippe Kruchten’s <b>“4+1 View Model”</b> to document your 
 
 The logical view contains information about the various parts of the system. In UML the logical view is typically modeled using <em>class diagrams</em>.
 
-For example, the following figure represents the UML class diagram for the +Greeter+ model and its factory class:
+For example, the following figure represents the UML class diagram for the +lambda_handler+ model and its functions:
 
 rdoc-image:img/class_diagram.png
 
-You can include as many of these diagrams as you consider necessary. Note that you only need to specify the names of the classes and their relationships. Don’t include attributes or method names in these diagrams.
-
-To include an image in this document, copy it to the +img+ directory and refer it as: +rdoc-image:img/some_image.png+. You can use any web supported image format (PNG, JPEG, GIF, etc.).
 
 === Process View
 
@@ -85,11 +89,7 @@ Briefly mention all the patterns that your application uses and identify where e
 
 - <b>Domain-Specific Language</b>: The +server.rb+ file consists of a series of Sinatra _routes_. Sinatra is a DSL for creating web applications in Ruby.
 - <b>Model-View-Controller</b>: The application follows the classical web implementation of the MVC architectural pattern. The models (+.rb+ files) and views (+.erb+ files) are stored in the corresponding +models+ and +views+ directory. The controller is contained in +server.rb+ file.
-- <b>Simple Factory</b>: The +GreeterFactory+ is used to create +Greeter+ instances by specifying the desired language during its creation.
 
-== Acknowledgments
-
-This section is optional. If somebody helped you with your project make sure to include her or his name here.
 
 == References
 

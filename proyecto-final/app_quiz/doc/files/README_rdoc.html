@@ -30,13 +30,19 @@ README.rdoc
 </div>
 <div class='last-update'>
 Last Update:
-<span class='datetime'>2022-11-26 11:48:45 -0600</span>
+<span class='datetime'>2022-11-28 10:45:09 -0600</span>
 </div>
 </div>
 <div id='content'>
 <div id='text'>
 <div id='description'>
 <h1 id="label-Application+Design+and+Architecture">Application Design and Architecture<span><a href="#label-Application+Design+and+Architecture">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<h1 id="label-General+overview">General overview<span><a href="#label-General+overview">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>This project implements a quiz application using two microservices and using various AWS services. The front-end app was made with Ruby and Sinatra and the microservices were uploaded to lambda functions to create requests.</p>
+
+<h1 id="label-General+overview">General overview<span><a href="#label-General+overview">&para;</a> <a href="#top">&uarr;</a></span></h1>
 
 <h2 id="label-Authors">Authors<span><a href="#label-Authors">&para;</a> <a href="#top">&uarr;</a></span></h2>
 <ul><li>
@@ -87,13 +93,9 @@ Last Update:
 
 <p>The logical view contains information about the various parts of the system. In UML the logical view is typically modeled using <em>class diagrams</em>.</p>
 
-<p>For example, the following figure represents the UML class diagram for the <code>Greeter</code> model and its factory class:</p>
+<p>For example, the following figure represents the UML class diagram for the <code>lambda_handler</code> model and its functions:</p>
 
 <p><img src="img/class_diagram.png"></p>
-
-<p>You can include as many of these diagrams as you consider necessary. Note that you only need to specify the names of the classes and their relationships. Don’t include attributes or method names in these diagrams.</p>
-
-<p>To include an image in this document, copy it to the <code>img</code> directory and refer it as: <code>rdoc-image:img/some_image.png</code> You can use any web supported image format (PNG, JPEG, GIF, etc.).</p>
 
 <h3 id="label-Process+View">Process View<span><a href="#label-Process+View">&para;</a> <a href="#top">&uarr;</a></span></h3>
 
@@ -126,13 +128,7 @@ Last Update:
 <p><strong>Domain-Specific Language</strong>: The <code>server.rb</code> file consists of a series of Sinatra <em>routes</em>. Sinatra is a DSL for creating web applications in Ruby.</p>
 </li><li>
 <p><strong>Model-View-Controller</strong>: The application follows the classical web implementation of the MVC architectural pattern. The models (<code>.rb</code> files) and views (<code>.erb</code> files) are stored in the corresponding <code>models</code> and <code>views</code> directory. The controller is contained in <code>server.rb</code> file.</p>
-</li><li>
-<p><strong>Simple Factory</strong>: The <code>GreeterFactory</code> is used to create <code>Greeter</code> instances by specifying the desired language during its creation.</p>
 </li></ul>
-
-<h2 id="label-Acknowledgments">Acknowledgments<span><a href="#label-Acknowledgments">&para;</a> <a href="#top">&uarr;</a></span></h2>
-
-<p>This section is optional. If somebody helped you with your project make sure to include her or his name here.</p>
 
 <h2 id="label-References">References<span><a href="#label-References">&para;</a> <a href="#top">&uarr;</a></span></h2>
 
