@@ -30,7 +30,7 @@ README.rdoc
 </div>
 <div class='last-update'>
 Last Update:
-<span class='datetime'>2022-11-28 10:45:09 -0600</span>
+<span class='datetime'>2022-11-28 16:15:32 -0600</span>
 </div>
 </div>
 <div id='content'>
@@ -41,8 +41,6 @@ Last Update:
 <h1 id="label-General+overview">General overview<span><a href="#label-General+overview">&para;</a> <a href="#top">&uarr;</a></span></h1>
 
 <p>This project implements a quiz application using two microservices and using various AWS services. The front-end app was made with Ruby and Sinatra and the microservices were uploaded to lambda functions to create requests.</p>
-
-<h1 id="label-General+overview">General overview<span><a href="#label-General+overview">&para;</a> <a href="#top">&uarr;</a></span></h1>
 
 <h2 id="label-Authors">Authors<span><a href="#label-Authors">&para;</a> <a href="#top">&uarr;</a></span></h2>
 <ul><li>
@@ -93,13 +91,21 @@ Last Update:
 
 <p>The logical view contains information about the various parts of the system. In UML the logical view is typically modeled using <em>class diagrams</em>.</p>
 
-<p>For example, the following figure represents the UML class diagram for the <code>lambda_handler</code> model and its functions:</p>
+<p>For example, the following figure represents the UML class diagram for the <code>lambda_handler</code> model of questions API and its functions:</p>
 
-<p><img src="img/class_diagram.png"></p>
+<p><img src="img/Logic_View_Questions.png"></p>
+
+<p>The following figure represents the UML class diagram for the <code>lambda_handler</code> model of users API and its functions:</p>
+
+<p><img src="img/Logic_View_Users.png"></p>
+
+<p>The following figure represents the UML class diagram for the <code>server.rb</code> model and its functions:</p>
+
+<p><img src="img/Logic_View_Server.png"></p>
 
 <h3 id="label-Process+View">Process View<span><a href="#label-Process+View">&para;</a> <a href="#top">&uarr;</a></span></h3>
 
-<p>The process view focuses on the runtime behavior of the system. In UML, <em>activity diagrams</em> are used to model this view.</p>
+<p>The process view focuses on the runtime behavior of the system of both API questions and API users. In UML, <em>activity diagrams</em> are used to model this view.</p>
 
 <p><img src="img/activity_diagram.png"></p>
 
@@ -107,7 +113,7 @@ Last Update:
 
 <p>The development view focuses on software modules and subsystems. In UML, <em>package diagrams</em> are used to model the development view.</p>
 
-<p><img src="img/package_diagram.png"></p>
+<p><img src="img/Development_View.png"></p>
 
 <h3 id="label-Physical+View">Physical View<span><a href="#label-Physical+View">&para;</a> <a href="#top">&uarr;</a></span></h3>
 

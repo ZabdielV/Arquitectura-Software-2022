@@ -106,7 +106,7 @@ def handle_get_users(event)
 }
 end
 
-handle_get_users
+
 
 
 #Handles wrong requests.

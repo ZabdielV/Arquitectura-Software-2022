@@ -5,7 +5,6 @@
 This project implements a quiz application using two microservices and using various AWS services. The front-end app was made with Ruby and Sinatra and the microservices were uploaded to lambda functions to create requests.
 
 
-= General overview
 
 == Authors
 
@@ -54,14 +53,21 @@ You must use Philippe Kruchten’s <b>“4+1 View Model”</b> to document your 
 
 The logical view contains information about the various parts of the system. In UML the logical view is typically modeled using <em>class diagrams</em>.
 
-For example, the following figure represents the UML class diagram for the +lambda_handler+ model and its functions:
+For example, the following figure represents the UML class diagram for the +lambda_handler+ model of questions API and its functions:
 
-rdoc-image:img/class_diagram.png
+rdoc-image:img/Logic_View_Questions.png
 
+The following figure represents the UML class diagram for the +lambda_handler+ model of users API and its functions:
+
+rdoc-image:img/Logic_View_Users.png
+
+The following figure represents the UML class diagram for the +server.rb+ model and its functions:
+
+rdoc-image:img/Logic_View_Server.png
 
 === Process View
 
-The process view focuses on the runtime behavior of the system. In UML, <em>activity diagrams</em> are used to model this view.
+The process view focuses on the runtime behavior of the system of both API questions and API users. In UML, <em>activity diagrams</em> are used to model this view.
 
 rdoc-image:img/activity_diagram.png
 
@@ -69,7 +75,7 @@ rdoc-image:img/activity_diagram.png
 
 The development view focuses on software modules and subsystems. In UML, <em>package diagrams</em> are used to model the development view.
 
-rdoc-image:img/package_diagram.png
+rdoc-image:img/Development_View.png
 
 === Physical View
 
