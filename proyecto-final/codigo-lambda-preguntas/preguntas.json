@@ -52,7 +52,7 @@
     {
         "id":7,
         "title":"Factory Design Pattern",
-        "question":"_____ is similar to Abstract Factory but without the emphasis on families.",
+        "question":"___ is similar to Abstract Factory but without the emphasis on families.",
         "answer-1":"Prototype pattern",
         "answer-2":"Factory pattern",
         "answer-3":"Singleton pattern",
@@ -79,7 +79,7 @@
     {
         "id":10,
         "title":"Adapter Design Pattern",
-        "question":"Convert the interface of a class into another interface clients expect. ____ lets classes work together that couldn't otherwise because of incompatible interfaces.",
+        "question":"Convert the interface of a class into another interface clients expect. __ lets classes work together that couldn't otherwise because of incompatible interfaces.",
         "answer-1":"Singleton pattern",
         "answer-2":"Adapter pattern",
         "answer-3":"Abstract pattern",
@@ -113,7 +113,7 @@
     {
         "id":14,
         "title":"Composite Design Pattern",
-        "question":"Compose objects into tree structures to represent whole-part hierarchies. ____ lets clients treat individual objects and compositions of objects uniformly.",
+        "question":"Compose objects into tree structures to represent whole-part hierarchies. __ lets clients treat individual objects and compositions of objects uniformly.",
         "answer-1":"Bridge pattern",
         "answer-2":"Adapter pattern",
         "answer-3":"Composite pattern ",
@@ -127,8 +127,139 @@
         "answer-2":"Decorator pattern",
         "answer-3":"Bridge pattern",
         "correct-answer":"answer-2"
+    },
+    {
+        "id":16,
+        "title":"Singletton Design Pattern",
+        "question":"What are the steps to perform a lazy initialization?",
+        "answer-1":"Create a class > Create Instance locallly > Initiate Instace",
+        "answer-2":"Create a class with lazy instance > Call Instance in another class",
+        "answer-3":"Create a Instance > Create a class > Initiate the Instance",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":17,
+        "title":"Singletton Design Pattern",
+        "question":"How thread safe singleton works?",
+        "answer-1":"Helps you synchronize global access to the method.",
+        "answer-2":"Allows you to synchronize all threads you are working with.",
+        "answer-3":"Works to keep only one instance in a class.",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":18,
+        "title":"Singletton Design Pattern",
+        "question":"What happens if multiple variables in a class contain different instances?",
+        "answer-1":"Nothing, the pattern allows this kind of implementations",
+        "answer-2":"It does not work for having multiple instances",
+        "answer-3":"The pattern works as long as the variables have the same instance",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":19,
+        "title":"Prototype Design Pattern",
+        "question":"What solution does the Prototype Design Pattern offer?",
+        "answer-1":"Copy classes with all created objects",
+        "answer-2":"Copy objects (even if their values are private or hidden)",
+        "answer-3":"Copy complete interfaces (regardless of their code)",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":20,
+        "title":"Prototype Design Pattern",
+        "question":"What is the function of the clone() method?",
+        "answer-1":"Make a copy through the code set in the class",
+        "answer-2":"Performing a copy through setting a common interface",
+        "answer-3":"Establish a subclass that inherits everything from its parent class",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":21,
+        "title":"Prototype Design Pattern",
+        "question":"Which section of the code should the clone() method be set to work correctly?",
+        "answer-1":"All classes of code",
+        "answer-2":"Only in subclasses of the principal interface",
+        "answer-3":"In a subclasses",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":22,
+        "title":"Factory Design Pattern",
+        "question":"What is the main change offered by the Factory Design Pattern?",
+        "answer-1":"The place from where the constructor is invoked",
+        "answer-2":"The implementation of new classes related to production",
+        "answer-3":"We create a subclass for the class that needs modification",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":23,
+        "title":"Factory Design Pattern",
+        "question":"Which of the following is a benefit of the Factory Design Pattern?",
+        "answer-1":"It allows you to build new objects from other objects",
+        "answer-2":"Allows you to mass generate unique objects",
+        "answer-3":"It allows you to reuse already defined objects",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":24,
+        "title":"Abstract Design Pattern",
+        "question":"This pattern provides an interface to create objects from each class of the product family?",
+        "answer-1":"Adapter Design Pattern",
+        "answer-2":"Abstract Design Pattern",
+        "answer-3":"Factory Design Pattern",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":25,
+        "title":"Abstract Design Pattern",
+        "question":"Which of the following is a disadvantage of the Abstract Design Pattern?",
+        "answer-1":"The pattern increases the creation of new interfaces",
+        "answer-2":"The pattern increases coupling",
+        "answer-3":"The pattern introduces the Open/Closed Principle",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":26,
+        "title":"Abstract Design Pattern",
+        "question":"What is the pattern that we can compare with Abstract Design since it allows to hide the way in which the subsystem objects are created from the client code?",
+        "answer-1":"Facade Pattern",
+        "answer-2":"Bridge Pattern",
+        "answer-3":"Prototype Pattern",
+        "correct-answer":"answer-1"
+    },
+    {
+        "id":27,
+        "title":"Abstract Design Pattern",
+        "question":"Which of the following is allowed by the Abstract design pattern?",
+        "answer-1":"Allow you to clone objects regardless of their complexity",
+        "answer-2":"Implement a super class for the program",
+        "answer-3":"Create an adapter for different classes",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":28,
+        "title":"Bridge Design Pattern",
+        "question":"Creational Design Patterns",
+        "answer-1":"Allow you to clone objects regardless of their complexity",
+        "answer-2":"Structural Design Patterns",
+        "correct-answer":"answer-2"
+    },
+    {
+        "id":29,
+        "title":"Design Patterns",
+        "question":"you can use this pattern when looking to extend a class in several orthogonal dimensions",
+        "answer-1":"Composite Pattern",
+        "answer-2":"Facade Pattern",
+        "answer-3":"Bridge Pattern",
+        "correct-answer":"answer-3"
+    },
+    {
+        "id":30,
+        "title":"Facade Design Pattern",
+        "question":"What is the intention of Facade pattern design?",
+        "answer-1":"Provides a simplified interface to a library, a framework, or any other complex set of classes",
+        "answer-2":"Provides an interface for creating objects in a superclass",
+        "answer-3":"Let you fit more objects into the available amount of RAM by sharing common parts of state",
+        "correct-answer":"answer-1"
     }
-
-
-
 ]
